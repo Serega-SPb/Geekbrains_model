@@ -144,6 +144,7 @@ body {
 
 .products {
     display: flex;
+    justify-content: space-between;
 }
 .product-sm {
     width: 270px;
@@ -223,15 +224,28 @@ body {
 .btn-sm::after{
     padding: 0;
 }
+.prod{
+    width: 270px;
+    height: 270px;    
+}
 
-.product-content {
+
+.prod:hover .product-content{
     display: flex;
+    opacity: 0.9;
+}
+.product-content {
+    width: 270px;
+    height: 270px;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     align-items: center;
     padding: 32px;
-    padding-top: 62px;
+    background-color: white;
+    box-sizing: border-box;
+    outline: 1px solid #9c9c9c;
 }
 
 .pr-cont-p {
