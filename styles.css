@@ -2,11 +2,19 @@
     margin: 0;
     padding: 0;
 }
+html,
+body {
+  height: 100%;
+}
 body {
     font-family: 'Montserrat', sans-serif;
 }
+.top {
+  flex-grow: 1;
+}
 .container {
     width: 1366px;
+    min-height: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -500,16 +508,27 @@ body {
 .sub-email {
     width: 370px;
     height: 48px;
-    padding: 17px 19px;
+    padding: 17px 42px 17px 19px;
     box-sizing: border-box;
+    outline: none;
+}
+.sub-email:focus{
+    border: 2px solid rgb(77,144,254)
+}
+.sub-form {
+    display: block;
+    position: relative;
+    width: 370px;
+    height: 48px;
+    margin-top: 26px;
 }
 
 .sub-btn {
     background: none;
     border: none;
     width: 21px;
-    height: 17px;
-    margin: 16px 14px 15px;
+    height: 48px;
+    margin: 0 15px;
     position: absolute;
     top: 0px;
     right: 0px;
@@ -517,14 +536,6 @@ body {
 }
 .img-hover:hover{
     opacity: 0.5;
-}
-
-.sub-form {
-    display: block;
-    position: relative;
-    width: 370px;
-    height: 48px;
-    margin-top: 26px;
 }
 
 .copyright {
@@ -535,7 +546,15 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.6px;
     }
-
+.social{
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    background: gray;
+    border-radius: 50%;
+    padding: 5px;
+    box-sizing: border-box;
+}
 .policy {
     text-decoration: none;
     color: #6c6c6c;
@@ -655,7 +674,10 @@ body {
 .address-box:hover{
     outline: 1px solid #212121
 }
-
+.map-marker{
+    width: 38px;
+    height: 48px;
+}
 .city-h4 {
     color: #212121;
     font-size: 22px;
